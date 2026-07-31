@@ -1,0 +1,12 @@
+Население в КЗ_Фикс = 
+VAR Threshold = 4
+RETURN
+CALCULATE(
+    SUM('Данные'[Население 2025]),
+    KEEPFILTERS(
+        FILTER(
+            ALL('Данные'[Городской округ]), -- чистый список городов
+            CALCULATE([Динамический индекс]) < Threshold && CALCULATE([Динамический индекс]) > 0
+        )
+    )
+)
