@@ -25,7 +25,7 @@
 ## Скриншоты
 
 ### 1. Карта доступности и сценарии
-![Главный экран](![Uploading dashboard_main.png])
+![Главный экран](![<img width="1671" height="1112" alt="Снимок экрана 2026-07-31 111819" src="https://github.com/user-attachments/assets/8f6d8a02-972a-4476-a7b9-406497b9cbfc" />)
 
 ### 2. Паспорт городского округа (Лобня)
 ![Паспорт округа](![Uploading passport.png])
