@@ -1,0 +1,36 @@
+## 📐 DAX-логика и Математическая модель
+
+В репозитории представлены ключевые примеры расчетных мер, обеспечивающих динамический пересчет индексов, What-If сценарии и автогенерацию заголовков (NLG).
+
+### 1. Модифицированный динамический индекс (PTWAI)
+*Файл: [`dax/dynamic_index.dax`](dax/dynamic_index.dax)*
+
+Рассчитывает скорректированное время в пути с учетом коэффициента ожидания, штрафа и времени движения, переводя итоговый результат в 12-балльную шкалу доступности.
+
+```dax
+Динамический индекс = 
+VAR SelectedWaiting = AVERAGE('Ожидание'[Ожидание])
+RETURN
+AVERAGEX(
+    KEEPFILTERS(
+        SUMMARIZE('Лист1', 'Лист1'[Город], 'Лист1'[Категория])
+    ),
+    VAR AdjustedTime = 
+        (CALCULATE(AVERAGE('Лист1'[Ожидание])) * SelectedWaiting + CALCULATE(AVERAGE('Лист1'[Штраф])) + CALCULATE(AVERAGE('Лист1'[Чистое время в пути (мин)]))) -- т.к. через SUM суммировались все числа, пришлось сделать упрощение и остановиться на среднем
+    RETURN
+    SWITCH(TRUE(),
+        AdjustedTime < 10, 12,
+        AdjustedTime < 20, 11,
+        AdjustedTime < 30, 10,
+        AdjustedTime < 40, 9,
+        AdjustedTime < 50, 8,
+        AdjustedTime < 60, 7,
+        AdjustedTime < 70, 6,
+        AdjustedTime < 80, 5,
+        AdjustedTime < 90, 4,
+        AdjustedTime < 100, 3,
+        AdjustedTime < 110, 2,
+        AdjustedTime < 120, 1,
+        0
+    )
+)
