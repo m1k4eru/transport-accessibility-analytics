@@ -1,4 +1,4 @@
-<img width="1671" height="1112" alt="Снимок экрана 2026-07-31 111819" src="https://github.com/user-attachments/assets/c05e8c7f-76ca-4bbc-a316-23bac42421e5" /><img width="1670" height="942" alt="Снимок экрана 2026-07-31 111834" src="https://github.com/user-attachments/assets/3d6a6441-349e-4814-8ded-ad68d8b6bd36" /><img width="1670" height="934" alt="Снимок экрана 2026-07-31 111753" src="https://github.com/user-attachments/assets/859940e2-be1b-475d-bab2-ee26be784328" /># Мониторинг и моделирование транспортной доступности (МО)
+
 
 Интерактивный дашборд для оценки транспортной доступности (индекс PTWAI), имитационного моделирования и сценарного анализа («Что если») по округам Московской области.
 
