@@ -1,0 +1,11 @@
+Заголовок сводки = 
+VAR SelectedCity = SELECTEDVALUE('Данные'[Городской округ], "Московская область")
+VAR WaitTime = SELECTEDVALUE('Ожидание'[Ожидание])
+VAR CurrentMode = MAX('Параметр'[Параметр])
+
+RETURN
+SWITCH( TRUE(),
+    CurrentMode = "ИНДЕКС", "Карта доступности: " & SelectedCity,
+    CurrentMode = "НАСЕЛЕНИЕ", "Плотность населения 2025: " & SelectedCity,
+    "Выберите режим для анализа"
+)
