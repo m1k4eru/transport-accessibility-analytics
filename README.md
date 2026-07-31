@@ -6,9 +6,9 @@
 
 ## Демонстрация
 
-![Демонстрация работы](media/demo.gif)
 
-> **[Смотреть полное видео-демо (1.5 мин)](https://your-link-here.com)** *(вставьте ссылку)*
+![Демонстрация работы]([media/demo.gif](https://github.com/user-attachments/assets/a9910c07-6930-4b39-8a61-ab73e34bc040))
+
 
 ---
 
