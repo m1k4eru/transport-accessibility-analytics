@@ -25,13 +25,14 @@
 ## Скриншоты
 
 ### 1. Карта доступности и сценарии
-![Главный экран](![<img width="1671" height="1112" alt="Снимок экрана 2026-07-31 111819" src="https://github.com/user-attachments/assets/8f6d8a02-972a-4476-a7b9-406497b9cbfc" />)
+Главный экран <img width="1670" height="934" alt="Снимок экрана 2026-07-31 111753" src="https://github.com/user-attachments/assets/f27e9836-58fc-4065-9fa4-317121ea1b64" />
 
-### 2. Паспорт городского округа (Лобня)
-![Паспорт округа](![Uploading passport.png])
+### 2. Паспорт городского округа (Одинцово)
+Паспорт округа <img width="1670" height="942" alt="Снимок экрана 2026-07-31 111834" src="https://github.com/user-attachments/assets/15c85316-725f-40c6-953a-1b337b283ace" />
+
 
 ### 3. Всплывающая подсказка
-![Подсказка](![Uploading tooltip_detail.png])
+[Подсказка] <img width="1671" height="1112" alt="Снимок экрана 2026-07-31 111819" src="https://github.com/user-attachments/assets/8f6d8a02-972a-4476-a7b9-406497b9cbfc" />
 
 ---
 
